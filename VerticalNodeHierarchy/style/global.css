@@ -1,0 +1,102 @@
+.custom-vis-layout.verticalnodehierarchy .errorMsg {
+	position: absolute;
+	display: none;
+	background: none repeat scroll 0 0 #ffffff;
+	padding: 5px;
+	text-align: center;
+	font-size: 13px;
+}
+
+.custom-vis-layout.verticalnodehierarchy #svgRoot {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	overflow: hidden;
+	display: block;
+}
+.custom-vis-layout.verticalnodehierarchy .link {
+	stroke:#ccc;
+	stroke-width:2px;
+	marker-end:url(#arrow);
+	transition:stroke .25s,stroke-width .25s
+}
+
+.custom-vis-layout.verticalnodehierarchy .link-upstream {
+	stroke:#0af!important;
+	stroke-width:3px
+}
+
+.custom-vis-layout.verticalnodehierarchy .link-downstream {
+	stroke:#0f0!important;
+	stroke-width:3px
+}
+
+.custom-vis-layout.verticalnodehierarchy .link-highlight {
+	stroke:orange!important;
+	stroke-width:3px
+}
+
+.custom-vis-layout.verticalnodehierarchy .node rect {
+	stroke:#333;
+	stroke-width:1.5px;
+	rx:8;
+	transition:stroke .25s
+}
+.custom-vis-layout.verticalnodehierarchy .node-upstream rect { stroke:#0af!important;stroke-width:3px }
+.custom-vis-layout.verticalnodehierarchy .node-downstream rect { stroke:#0f0!important;stroke-width:3px }
+.custom-vis-layout.verticalnodehierarchy .highlight rect { stroke:orange!important;stroke-width:3px;animation:pulse 1200ms ease-in-out 3 }
+.custom-vis-layout.verticalnodehierarchy .status-circle{stroke:#fff;stroke-width:1.5px}
+@keyframes pulse{0%{opacity:1}50%{opacity:.6;transform:scale(1.06)}100%{opacity:1}}
+.custom-vis-layout.verticalnodehierarchy .node text {
+	font-size:13px;
+	fill:#222;
+	pointer-events:none
+}
+.custom-vis-layout.verticalnodehierarchy .tooltip {
+	position:absolute;
+	display:none;
+	pointer-events:none;
+	background:#222;
+	color:#fff;
+	padding:10px;
+	border-radius:6px;
+	box-shadow:0 6px 18px rgba(0,0,0,.15);
+	font-size:13px;
+	max-width:320px;
+	line-height:1.35
+}
+
+.custom-vis-layout.verticalnodehierarchy .ctrl{position:absolute;top:10px;left:10px;z-index:1200;gap:8px;align-items:center}
+.custom-vis-layout.verticalnodehierarchy .ctrl input{padding:6px 8px;border-radius:6px;border:1px solid #ccc;min-width:180px}
+.custom-vis-layout.verticalnodehierarchy .ctrl button{padding:6px 10px;border-radius:6px;border:1px solid #ccc;background:#fff;cursor:pointer}
+.custom-vis-layout.verticalnodehierarchy #fit-btn{display:none}
+/*
+.custom-vis-layout.verticalnodehierarchy #filter-input, #fit-btn {
+	position: absolute;
+	top: 10px;
+	z-index: 1001;
+	padding: 6px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background: white;
+}
+.custom-vis-layout.verticalnodehierarchy #filter-input { left: 10px; width: 150px }
+.custom-vis-layout.verticalnodehierarchy #fit-btn { left: 220px; cursor: pointer; }
+*/
+.mojo-theme-dark .mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-VerticalNodeHierarchy>div>div,.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-VerticalNodeHierarchy>div>div
+{
+	background:url(../style/images/level_hierarchy_100.png) no-repeat scroll;
+	background-size:30px
+}
+#RwMenuModel_WEB-INFxmllayoutsblocksInsertDHTMLWidgetMenuLayoutxml #mnuInsertWgVerticalNodeHierarchy,#RwMenuModelEditor_WEB-INFxmllayoutsblocksInsertDHTMLWidgetMenuEditorLayoutxml #mnuInsertWgVerticalNodeHierarchy
+{
+	background:url(../style/images/level_hierarchy_100.png) no-repeat scroll 4px;
+	background-size:16px
+}
+
+
+
+
+
+
+
